@@ -10,7 +10,10 @@ Este é um repositório para uma aplicação de um sistema de gestão de tarefas
 
 ## Apresentação do Protótipo
 
-[Inserir protótipo aqui]
+
+![Tela 1](images/tela1.png)
+![Tela 2](images/listagem.png)
+
 
 ## Instruções de Uso 👾
 
