@@ -1,27 +1,60 @@
-# MyApp
+# Aplicação com Angular e Java Spring Boot 💡
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
+Este é um repositório para uma aplicação de um sistema de gestão de tarefas, tendo o Front-end desenvolvido utilizando Angular na versão mais recente e o Backend com Java 11 e Spring Boot. 🚀
 
-## Development server
+## Funcionalidades ⚙️
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Listar Tarefas:** A aplicação permite listar tarefas com os seguintes dados: Título, Descrição, Responsável, Prioridade (Alta, Média, Baixa), e Deadline (Data).
+- **Filtragem de Tarefas:** É possível filtrar as tarefas por diferentes campos, como: número, título/descrição, responsável e situação.
+- **Ações com Tarefas:** A listagem de tarefas permite interagir com as mesmas, como editar, excluir e concluir.
 
-## Code scaffolding
+## Apresentação do Protótipo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Inserir protótipo aqui]
 
-## Build
+## Instruções de Uso 👾
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para rodar esta aplicação em sua máquina local, siga estas etapas:
 
-## Running unit tests
+1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/). ✅
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Instale o Angular CLI globalmente executando o seguinte comando no terminal:
 
-## Running end-to-end tests
+    ```
+    npm install -g @angular/cli
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Clone este repositório em sua máquina local utilizando o seguinte comando:
 
-## Further help
+    ```
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Navegue até o diretório do projeto clonado:
+
+    ```
+    cd seu-repositorio
+    ```
+
+5. Instale as dependências do projeto utilizando o npm:
+
+    ```
+    npm install
+    ```
+
+6. Após a instalação das dependências, inicie o servidor de desenvolvimento executando o seguinte comando:
+
+    ```
+    ng serve
+    ```
+
+7. Abra seu navegador e acesse `http://localhost:4200/` para visualizar a aplicação. 🌐
+
+## Tecnologias Utilizadas 💻
+
+### Angular 🅰️ 
+- Angular é uma plataforma completa para construir aplicações web modernas e dinâmicas, com uma arquitetura baseada em componentes e integração com TypeScript.
+
+
+### Java Spring Boot ☕
+- Java Spring Boot é um framework robusto e escalável para desenvolvimento de aplicações back-end em Java, oferecendo configuração mínima e suporte a uma ampla gama de tecnologias.
