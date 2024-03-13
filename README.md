@@ -30,7 +30,7 @@ Para rodar esta aplicação em sua máquina local, siga estas etapas:
 3. Clone este repositório em sua máquina local utilizando o seguinte comando:
 
     ```
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    https://github.com/gigigabytes/crud-angular-springboot.git
     ```
 
 4. Navegue até o diretório do projeto clonado:
