@@ -1,1 +1,115 @@
-<p>tarefas works!</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="tarefas.component.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Gerenciador de Tarefas</h1>
+    <h2>Funcionalidades:</h2>
+    <ul>
+        <li>Criar uma tarefa</li>
+        <li>Atualizar a tarefa</li>
+        <li>Remover a tarefa</li>
+        <li>Listar tarefas</li>
+    </ul>
+    <h2>Cadastrar Tarefa</h2>
+    <form id="task-form">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" placeholder="Nome da tarefa (ex: Comprar mantimentos)"><br>
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" placeholder="Descrição detalhada da tarefa"></textarea><br>
+
+      <div class="input-group">
+          <div class="input-left">
+              <label for="responsavel">Responsável:</label>
+              <select id="responsavel" name="responsavel">
+                  <option value="" disabled selected>Selecione</option>
+              </select>
+          </div>
+          <div class="input-right">
+              <label for="prioridade">Prioridade:</label>
+              <select id="prioridade" name="prioridade">
+                  <option value="alta">Alta</option>
+                  <option value="media">Média</option>
+                  <option value="baixa">Baixa</option>
+              </select><br>
+          </div>
+      </div>
+
+      <label for="deadline">Deadline:</label>
+      <input type="date" id="deadline" name="deadline">
+
+      <button type="submit" class="submit-button" (click)="cadastrarTarefa()">Cadastrar</button>
+    </form>
+
+    <h2>Exemplo de Lista de Tarefas:</h2>
+    <ul class="task-list">
+      <div class="container">
+        <h1>Listagem de Tarefas</h1>
+        <form id="filter-form">
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero"><br>
+
+            <label for="titulo">Título/Descrição:</label>
+            <input type="text" id="titulo" name="titulo"><br>
+
+            <label for="responsavel">Responsável:</label>
+            <select id="responsavel" name="responsavel">
+                <option value="" disabled selected>Selecione</option>
+                <!-- Opções de responsáveis -->
+                <option value="responsavel1">João</option>
+                <option value="responsavel2">Antônio</option>
+            </select><br>
+
+            <label for="situacao">Situação:</label>
+            <select id="situacao" name="situacao">
+                <option value="" disabled selected>Selecione</option>
+                <!-- Opções de situação -->
+                <option value="andamento">Em andamento</option>
+                <option value="concluida">Concluída</option>
+                <option value="pendente">Pendente</option>
+            </select><br>
+
+            <button type="submit">Listar Tarefas</button>
+        </form>
+
+    </div>
+
+          <div class="task-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Título</th>
+                        <th>Responsável</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tarefa 1</td>
+                        <td>Responsável 1</td>
+                        <td>
+                          <button>Editar</button>
+                        </td>
+                    </tr>
+                    <!-- Outras linhas da tabela serão preenchidas dinamicamente aqui -->
+                </tbody>
+            </table>
+          </div>
+
+    </ul>
+</div>
+
+</body>
+</html>
